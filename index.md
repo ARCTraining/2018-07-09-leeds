@@ -28,25 +28,11 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   And run 'make workshop-check' *before* committing to make sure that changes are good.
 {% endcomment %}
 
-{% comment %}
-  EVENTBRITE
 
-  This block includes the Eventbrite registration widget if
-  'eventbrite' has been set in the header.  You can delete it if you
-  are not using Eventbrite, or leave it in, since it will not be
-  displayed if the 'eventbrite' field in the header is not set.
-{% endcomment %}
-{% if page.eventbrite %}
-<iframe
-  src="https://www.eventbrite.com/tickets-external?eid={{page.eventbrite}}&ref=etckt"
-  frameborder="0"
-  width="100%"
-  height="248px"
-  scrolling="auto">
-</iframe>
-{% endif %}
 
 <h2 id="general">General Information</h2>
+
+<h4>Booking:</h4> Click <a href="https://ti.to/university-of-leeds-research-computing/software-carpentry">this link</a> to book via ti.to, our booking partners. 
 
 {% comment %}
   INTRODUCTION
@@ -76,6 +62,7 @@ eventbrite:           # optional: alphanumeric key for Eventbrite registration, 
   {% include lc/who.html %}
 {% endif %}
 
+This workshop is only open to researchers and postgraduate students at the University of Leeds.
 {% comment %}
   LOCATION
 
